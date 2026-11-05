@@ -1,0 +1,238 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Toby and the Reno Grass</title>
+  <meta name="description" content="Toby and the Reno Grass is a bluegrass band based in Reno, Nevada. Shows, music, photos and booking.">
+  <meta name="author" content="Toby and the Reno Grass">
+  <meta property="og:title" content="Toby and the Reno Grass">
+  <meta property="og:description" content="Bluegrass from Reno, Nevada.">
+  <meta property="og:type" content="website">
+  <!-- TODO: once the domain is live, set og:url and og:image (static/images/og.jpg, 1200x630) -->
+  <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
+  <link href="static/css/main.css?v=1" rel="stylesheet">
+</head>
+<body>
+
+<header class="site-header">
+  <nav class="nav" aria-label="Main">
+    <a class="brand" href="#top">Toby <span>&amp; the</span> Reno Grass</a>
+    <button class="nav-toggle" aria-expanded="false" aria-controls="nav-links" aria-label="Menu">
+      <span></span><span></span><span></span>
+    </button>
+    <ul class="nav-links" id="nav-links">
+      <li><a href="#about">About</a></li>
+      <li><a href="#shows">Shows</a></li>
+      <li><a href="#music">Music</a></li>
+      <li><a href="#photos">Photos</a></li>
+      <li><a href="#band">Band</a></li>
+      <li><a href="#booking">Booking</a></li>
+      <li><a href="epk.html">EPK</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+</header>
+
+<main id="top">
+
+  <!-- HERO. To use a band photo: add static/images/hero.jpg and uncomment the <img>.
+       The gradient stays underneath as a fallback. -->
+  <section class="hero">
+    <!-- <img class="hero-photo" src="static/images/hero.jpg" alt="Toby and the Reno Grass on stage"> -->
+    <div class="hero-inner">
+      <p class="hero-kicker">Bluegrass from Reno, Nevada</p>
+      <h1>Toby <span class="amp">&amp; the</span> Reno&nbsp;Grass</h1>
+      <p class="hero-sub">Tight harmonies, hot picking, and a few surprises. Straight out of the Truckee Meadows.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="#shows">Upcoming shows</a>
+        <a class="btn btn-ghost" href="#music">Listen</a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ABOUT -->
+  <section class="section" id="about">
+    <div class="container narrow">
+      <h2>About the band</h2>
+      <p class="lead">
+        <!-- TODO: replace with the real bio -->
+        Toby and the Reno Grass plays an exciting mix of traditional and progressive bluegrass in the
+        basin and range. Fiddle tunes, three-part harmonies, and the occasional song you didn't expect
+        to hear on a banjo.
+      </p>
+      <p>
+        Based in Reno, Nevada, the band plays breweries, festivals, farmers markets, weddings and
+        private events across the Reno/Tahoe area and the Sierra foothills.
+      </p>
+    </div>
+  </section>
+
+  <!-- SHOWS. Copy one <li class="show"> block per gig. Keep upcoming shows on top.
+       Move a show to the "Past shows" list once it has happened. -->
+  <section class="section section-alt" id="shows">
+    <div class="container">
+      <h2>Shows</h2>
+      <h3 class="subhead">Upcoming</h3>
+      <ul class="shows">
+        <li class="show">
+          <div class="show-date"><span class="show-month">TBA</span><span class="show-day">&nbsp;</span></div>
+          <div class="show-body">
+            <h4 class="show-title">More dates coming soon</h4>
+            <p class="show-meta">Follow us on social media to hear about new shows first.</p>
+          </div>
+        </li>
+        <!-- Example upcoming show (copy, uncomment, edit):
+        <li class="show">
+          <div class="show-date"><span class="show-month">Dec</span><span class="show-day">13</span></div>
+          <div class="show-body">
+            <h4 class="show-title">Venue Name</h4>
+            <p class="show-meta">
+              Saturday, December 13 &middot; 7:00 PM &middot;
+              <a href="https://www.google.com/maps/search/?api=1&query=Venue+Name+Reno+NV" target="_blank" rel="noopener">Reno, NV</a>
+            </p>
+            <p class="show-note">Free show. All ages.</p>
+          </div>
+          <a class="btn btn-small" href="https://example.com/tickets" target="_blank" rel="noopener">Tickets</a>
+        </li>
+        -->
+      </ul>
+
+      <details class="past-shows">
+        <summary>Past shows</summary>
+        <ul class="shows shows-past">
+          <li class="show">
+            <div class="show-date"><span class="show-month">—</span><span class="show-day">&nbsp;</span></div>
+            <div class="show-body">
+              <h4 class="show-title">No past shows listed yet</h4>
+            </div>
+          </li>
+        </ul>
+      </details>
+    </div>
+  </section>
+
+  <!-- MUSIC. Replace the placeholder tiles with YouTube embeds:
+       <div class="video"><iframe src="https://www.youtube.com/embed/VIDEO_ID" title="..." allowfullscreen loading="lazy"></iframe></div>
+       A streaming player (Spotify / Bandcamp) can go in the .listen-links block. -->
+  <section class="section" id="music">
+    <div class="container">
+      <h2>Music</h2>
+      <div class="video-grid">
+        <div class="video placeholder"><span>Video coming soon</span></div>
+        <div class="video placeholder"><span>Video coming soon</span></div>
+      </div>
+      <div class="listen-links">
+        <p>Recordings are in the works. In the meantime, come see us live.</p>
+        <!-- <a class="btn btn-ghost" href="https://open.spotify.com/artist/..." target="_blank" rel="noopener">Spotify</a>
+             <a class="btn btn-ghost" href="https://....bandcamp.com" target="_blank" rel="noopener">Bandcamp</a> -->
+      </div>
+    </div>
+  </section>
+
+  <!-- PHOTOS. Drop images into static/images/photos/ and replace each placeholder with
+       <a class="photo" href="static/images/photos/01.jpg"><img src="static/images/photos/01.jpg" alt="..." loading="lazy"></a> -->
+  <section class="section section-alt" id="photos">
+    <div class="container">
+      <h2>Photos</h2>
+      <div class="photo-grid">
+        <div class="photo placeholder"><span>Photo</span></div>
+        <div class="photo placeholder"><span>Photo</span></div>
+        <div class="photo placeholder"><span>Photo</span></div>
+        <div class="photo placeholder"><span>Photo</span></div>
+        <div class="photo placeholder"><span>Photo</span></div>
+        <div class="photo placeholder"><span>Photo</span></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BAND MEMBERS. One .member per person. Replace the .avatar placeholder with
+       <img class="avatar" src="static/images/band/name.jpg" alt="Name"> -->
+  <section class="section" id="band">
+    <div class="container">
+      <h2>The band</h2>
+      <div class="members">
+        <div class="member">
+          <div class="avatar placeholder"></div>
+          <h4>Toby</h4>
+          <p>Guitar &amp; vocals</p>
+        </div>
+        <div class="member">
+          <div class="avatar placeholder"></div>
+          <h4>Name</h4>
+          <p>Banjo</p>
+        </div>
+        <div class="member">
+          <div class="avatar placeholder"></div>
+          <h4>Name</h4>
+          <p>Mandolin</p>
+        </div>
+        <div class="member">
+          <div class="avatar placeholder"></div>
+          <h4>Name</h4>
+          <p>Fiddle</p>
+        </div>
+        <div class="member">
+          <div class="avatar placeholder"></div>
+          <h4>Name</h4>
+          <p>Bass</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- BOOKING -->
+  <section class="section section-dark" id="booking">
+    <div class="container narrow center">
+      <h2>Booking</h2>
+      <p class="lead">Toby and the Reno Grass is available for festivals, breweries, weddings, and private events in the Reno/Tahoe area and beyond.</p>
+      <div class="hero-actions">
+        <a class="btn btn-primary" href="mailto:tobyandtherenograss@gmail.com?subject=Booking%20inquiry">Get in touch</a>
+        <a class="btn btn-ghost" href="epk.html">Press kit (EPK)</a>
+      </div>
+    </div>
+  </section>
+
+
+</main>
+
+<!-- CONTACT / FOOTER. TODO: replace the placeholder email and social URLs. -->
+<footer class="site-footer" id="contact">
+  <div class="container center">
+    <h2>Contact</h2>
+    <ul class="contact-list">
+      <li>
+        <a href="mailto:tobyandtherenograss@gmail.com">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M3 5h18a1 1 0 0 1 1 1v12a1 1 0 0 1-1 1H3a1 1 0 0 1-1-1V6a1 1 0 0 1 1-1zm1 2.4V17h16V7.4l-8 5.3-8-5.3zM4.6 7l7.4 4.9L19.4 7H4.6z"/></svg>
+          tobyandtherenograss@gmail.com
+        </a>
+      </li>
+      <li>
+        <a href="https://www.facebook.com/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M13.5 22v-8h2.7l.4-3.2h-3.1V8.8c0-.9.3-1.6 1.6-1.6h1.7V4.4c-.3 0-1.3-.1-2.5-.1-2.5 0-4.1 1.5-4.1 4.2v2.3H7.4V14h2.8v8h3.3z"/></svg>
+          Facebook
+        </a>
+      </li>
+      <li>
+        <a href="https://www.instagram.com/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M12 7.2a4.8 4.8 0 1 0 0 9.6 4.8 4.8 0 0 0 0-9.6zm0 7.9a3.1 3.1 0 1 1 0-6.2 3.1 3.1 0 0 1 0 6.2zM17 5.9a1.1 1.1 0 1 0 0 2.2 1.1 1.1 0 0 0 0-2.2zM12 2.2c-2.7 0-3 0-4 .1-2.9.1-4.6 1.8-4.7 4.7-.1 1-.1 1.4-.1 4s0 3 .1 4c.1 2.9 1.8 4.6 4.7 4.7 1 .1 1.4.1 4 .1s3 0 4-.1c2.9-.1 4.6-1.8 4.7-4.7.1-1 .1-1.4.1-4s0-3-.1-4c-.1-2.9-1.8-4.6-4.7-4.7-1-.1-1.3-.1-4-.1zm0 1.8c2.6 0 2.9 0 4 .1 2 .1 3 1 3.1 3.1.1 1 .1 1.3.1 3.9s0 2.9-.1 3.9c-.1 2-1 3-3.1 3.1-1 .1-1.3.1-4 .1s-2.9 0-3.9-.1c-2-.1-3-1-3.1-3.1-.1-1-.1-1.3-.1-3.9s0-2.9.1-3.9c.1-2 1-3 3.1-3.1 1-.1 1.3-.1 3.9-.1z"/></svg>
+          Instagram
+        </a>
+      </li>
+      <li>
+        <a href="https://www.youtube.com/" target="_blank" rel="noopener">
+          <svg class="icon" viewBox="0 0 24 24" aria-hidden="true"><path d="M21.6 7.2c-.2-.9-.9-1.6-1.8-1.8C18.2 5 12 5 12 5s-6.2 0-7.8.4c-.9.2-1.6.9-1.8 1.8C2 8.8 2 12 2 12s0 3.2.4 4.8c.2.9.9 1.6 1.8 1.8C5.8 19 12 19 12 19s6.2 0 7.8-.4c.9-.2 1.6-.9 1.8-1.8.4-1.6.4-4.8.4-4.8s0-3.2-.4-4.8zM10 15V9l5.2 3L10 15z"/></svg>
+          YouTube
+        </a>
+      </li>
+    </ul>
+    <p class="copyright">&copy; <span id="year"></span> Toby and the Reno Grass &middot; Reno, Nevada</p>
+  </div>
+</footer>
+
+<script src="static/js/main.js"></script>
+</body>
+</html>
