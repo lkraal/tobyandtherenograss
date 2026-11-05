@@ -13,7 +13,14 @@ The main page is `index.html`, the press kit is `epk.html`. Each section has a c
 - **Photos**: put images in `static/images/photos/` and swap the placeholder tiles for `<img>` tags.
 - **Band**: one `.member` block per person; add photos under `static/images/band/`.
 - **Hero photo**: add `static/images/hero.jpg` (wide, ~2000 px) and uncomment the `<img class="hero-photo">` line.
-- **EPK**: `epk.html` holds the press kit (bios, press photos, video, stage plot, booking). Press photos and PDFs go in `static/epk/`.
+- **EPK**: `epk.html` holds the press kit (bios, press photos, video, stage plot, input list, booking). Full-size press photos live in `static/epk/`. After editing the page, regenerate the PDF:
+
+  ```sh
+  python3 -m http.server 8000 &
+  "/Applications/Google Chrome.app/Contents/MacOS/Google Chrome" --headless=new --no-pdf-header-footer \
+    --virtual-time-budget=8000 --print-to-pdf=static/epk/Toby-and-the-Reno-Grass-EPK.pdf http://localhost:8000/epk.html
+  kill %1
+  ```
 - **Contact / booking**: search for `TODO` and the placeholder email `tobyandtherenograss@gmail.com`.
 
 Styles are in `static/css/main.css`. Colors and fonts are variables at the top of that file.
