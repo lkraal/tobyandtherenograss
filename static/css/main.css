@@ -230,7 +230,8 @@ h2::after {
 @media (max-width: 700px) { .photo-grid { grid-template-columns: repeat(2, 1fr); } }
 
 /* Band */
-.members { display: grid; grid-template-columns: repeat(auto-fit, minmax(160px, 1fr)); gap: 28px 20px; text-align: center; }
+.members { display: flex; flex-wrap: wrap; justify-content: center; gap: 28px 20px; text-align: center; }
+.member { flex: 0 1 180px; }
 .member h4 { font-size: 1.25rem; margin: 0.6em 0 0.1em; }
 .member p { margin: 0; color: var(--ink-soft); }
 .avatar {
