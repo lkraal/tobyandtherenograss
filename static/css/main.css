@@ -287,7 +287,8 @@ h2::after {
 .epk .subhead { margin-top: 2.2em; }
 .epk .lead { margin-bottom: 0.6em; }
 .lineup { padding-left: 1.2em; }
-.press-photos { grid-template-columns: repeat(2, 1fr); }
+.press-photos { grid-template-columns: repeat(3, 1fr); }
+@media (max-width: 700px) { .press-photos { grid-template-columns: 1fr; } }
 .press-photos .photo { aspect-ratio: auto; }
 .video-links { padding-left: 1.2em; }
 .video-links li { margin-bottom: 0.3em; }
