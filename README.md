@@ -36,9 +36,10 @@ Push to `main`. GitHub Pages redeploys within a minute or two.
 
 Once the domain is registered:
 
-1. Add a file named `CNAME` in the repo root containing just the domain, e.g. `tobyandtherenograss.com`, and push.
-2. At the registrar, add DNS records:
+Domain: `tobyandtherenograss.com`, DNS at Cloudflare. The `CNAME` file in the repo root tells GitHub Pages about it.
+
+1. In Cloudflare DNS (proxy OFF, grey cloud):
    - `A` records for the apex (`@`) pointing to `185.199.108.153`, `185.199.109.153`, `185.199.110.153`, `185.199.111.153`
    - `CNAME` record for `www` pointing to `lkraal.github.io`
-3. In the repo on GitHub: Settings, Pages, confirm the custom domain and tick "Enforce HTTPS" once the certificate is issued (can take up to a day).
-4. Set `og:url` in `index.html` to the final URL.
+2. In the repo on GitHub: Settings, Pages, tick "Enforce HTTPS" once the certificate is issued (minutes to an hour).
+3. Cloudflare SSL/TLS mode must be "Full" if the proxy is ever turned on; "Flexible" causes a redirect loop.
