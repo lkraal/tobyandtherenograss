@@ -9,12 +9,13 @@
   <meta property="og:title" content="Toby and the Reno Grass">
   <meta property="og:description" content="Bluegrass from Reno, Nevada.">
   <meta property="og:type" content="website">
-  <!-- TODO: once the domain is live, set og:url and og:image (static/images/og.jpg, 1200x630) -->
+  <!-- TODO: once the domain is live, point og:image at the final URL -->
+  <meta property="og:image" content="https://lkraal.github.io/tobyandtherenograss/static/images/hero.jpg">
   <link rel="icon" href="static/images/favicon.svg" type="image/svg+xml">
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,700;9..144,900&family=Source+Sans+3:wght@400;600&display=swap" rel="stylesheet">
-  <link href="static/css/main.css?v=1" rel="stylesheet">
+  <link href="static/css/main.css?v=2" rel="stylesheet">
 </head>
 <body>
 
@@ -39,10 +40,12 @@
 
 <main id="top">
 
-  <!-- HERO. To use a band photo: add static/images/hero.jpg and uncomment the <img>.
-       The gradient stays underneath as a fallback. -->
+  <!-- HERO. Desktop uses static/images/hero.jpg (16:9), phones use hero-mobile.jpg (3:2). -->
   <section class="hero">
-    <!-- <img class="hero-photo" src="static/images/hero.jpg" alt="Toby and the Reno Grass on stage"> -->
+    <picture class="hero-photo">
+      <source media="(max-width: 700px)" srcset="static/images/hero-mobile.jpg">
+      <img src="static/images/hero.jpg" alt="Toby and the Reno Grass" fetchpriority="high">
+    </picture>
     <div class="hero-inner">
       <p class="hero-kicker">Bluegrass from Reno, Nevada</p>
       <h1>Toby <span class="amp">&amp; the</span> Reno&nbsp;Grass</h1>
