@@ -12,7 +12,7 @@ The main page is `index.html`, the press kit is `epk.html`. Each section has a c
 - **Music**: replace the placeholder tiles with YouTube `<iframe>` embeds.
 - **Photos**: put images in `static/images/photos/` and swap the placeholder tiles for `<img>` tags.
 - **Band**: one `.member` block per person; add photos under `static/images/band/`.
-- **Hero photo**: add `static/images/hero.jpg` (wide, ~2000 px) and uncomment the `<img class="hero-photo">` line.
+- **Hero photo**: add `static/images/hero-brown.jpg` (wide, ~2000 px) and uncomment the `<img class="hero-photo">` line.
 - **EPK**: `epk.html` holds the press kit (bios, press photos, video, stage plot, input list, booking). Full-size press photos live in `static/epk/`. After editing the page, regenerate the PDF:
 
   ```sh
